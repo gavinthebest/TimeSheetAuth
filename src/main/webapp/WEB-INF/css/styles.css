@@ -1,0 +1,48 @@
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+	background-color: #E5EEEE;
+}
+
+.registerform {
+	display: block;
+    position: relative;
+    padding: 1rem;
+    margin: 1rem -15px 0;
+    border: solid #f7f7f9;
+    border-width: .2rem 0 0;
+    background-color: white;
+}
+
+.loginform {
+	display: block;
+    position: relative;
+    padding: 1rem;
+    margin: 1rem -15px 0;
+    border: solid #f7f7f9;
+    border-width: .2rem 0 0;
+    background-color: white;
+    text-align: center;
+}
+
+#feedbackform{
+	display: none;
+    position: relative;
+    padding: 1rem;
+    margin: 1rem -15px 0;
+    border: solid #f7f7f9;
+    border-width: .2rem 0 0;
+    background-color: white;
+}
+
+#footer{
+    margin-top: 1rem;
+    padding: .5rem;
+    /*position: fixed; */
+    bottom: 0;
+    left: 0;
+  }
+  
+.dropdown-collapse {
+    max-height:100%;
+}  

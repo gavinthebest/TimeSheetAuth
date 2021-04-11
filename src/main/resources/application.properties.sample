@@ -1,0 +1,13 @@
+database.hibernate.url=
+database.hibernate.driver=com.mysql.cj.jdbc.Driver
+database.hibernate.username=
+database.hibernate.password=
+database.hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
+database.hibernate.showsql=false
+database.hibernate.hbm2ddl.auto=update
+
+spring.mvc.view.prefix=/WEB-INF/
+spring.mvc.view.suffix=.jsp
+spring.mvc.servlet.path=/auth
+
+server.port=9999
