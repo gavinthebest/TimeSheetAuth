@@ -53,7 +53,7 @@ public class LoginController {
 		claims.put("userId", String.valueOf(user.getId()));
 		String token = JwtUtil.generateToken(JwtConfig.signingKey, claims);
 		CookieUtil.create(httpServletResponse, JwtConfig.jwtTokenCookieName, token, false, -1, "localhost");
-		CookieUtil.create_forclient(httpServletResponse, "userId", String.valueOf(user.getId()), false, -1, "localhost");
+		CookieUtil.create_forclient(httpServletResponse, "userID", String.valueOf(user.getId()), false, -1, "localhost");
 		return "redirect:" + redirect;
 	}
 
