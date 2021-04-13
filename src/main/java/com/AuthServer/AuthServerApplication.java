@@ -18,7 +18,8 @@ import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
 @SpringBootApplication
-public class AuthServerApplication implements CommandLineRunner {
+//public class AuthServerApplication implements CommandLineRunner {
+public class AuthServerApplication {
 
 	@Autowired
 	private UserRepository repository;
@@ -27,14 +28,14 @@ public class AuthServerApplication implements CommandLineRunner {
 		SpringApplication.run(AuthServerApplication.class, args);
 	}
 
-	@Override
-	public void run(String... args) throws Exception {
-
-		System.out.println("--------------------------------");
-		System.out.println("User found with getUser:");
-		User u = repository.findUsersByUsername("user2");
-		System.out.println(u);
-	}
+//	@Override
+//	public void run(String... args) throws Exception {
+//
+//		System.out.println("--------------------------------");
+//		System.out.println("User found with getUser:");
+//		User u = repository.findUsersByUsername("user2");
+//		System.out.println(u);
+//	}
 
 	@EnableWebSecurity
 	@Configuration
@@ -54,7 +55,7 @@ public class AuthServerApplication implements CommandLineRunner {
 			configuration.setAllowedHeaders(Arrays.asList("Access-Control-Allow-Headers", "Access-Control-Allow-Origin",
 					"Access-Control-Request-Method", "Access-Control-Request-Headers", "Origin", "Cache-Control",
 					"Content-Type", "Authorization"));
-			configuration.setAllowedOrigins(Arrays.asList("http://localhost:3000","http://localhost:4200"));
+			configuration.setAllowedOrigins(Arrays.asList("http://localhost:3000","http://localhost:4200","http://localhost:4201"));
 			configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "PATCH", "DELETE"));
 			UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
 			source.registerCorsConfiguration("/**", configuration);
