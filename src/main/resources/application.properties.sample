@@ -1,10 +1,5 @@
-database.hibernate.url=
-database.hibernate.driver=com.mysql.cj.jdbc.Driver
-database.hibernate.username=
-database.hibernate.password=
-database.hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
-database.hibernate.showsql=false
-database.hibernate.hbm2ddl.auto=update
+spring.data.mongodb.uri=mongodb+srv://Admin:FGQ8d5mcR9iICLkx@cluster0.9puov.mongodb.net/TimeSheetDB?retryWrites=true&w=majority
+spring.data.mongodb.database=TimeSheetDB
 
 spring.mvc.view.prefix=/WEB-INF/
 spring.mvc.view.suffix=.jsp
